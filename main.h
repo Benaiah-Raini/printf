@@ -16,4 +16,6 @@ int _leng_to_string(char *s);
 void _pristr(char *s);
 char *_stcopy(char *desty, char *src);
 int (*controller(char s))(va_list);
+int _char(va_list args);
+int _string(va_list args);
 #endif

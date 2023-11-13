@@ -18,4 +18,6 @@ char *_stcopy(char *desty, char *src);
 int (*controller(char s))(va_list);
 int _char(va_list args);
 int _string(va_list args);
+int _signedint(va_list args);
+int _unsignedint(va_list args);
 #endif

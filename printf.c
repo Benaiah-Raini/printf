@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdarg.h>
-
+#include <unistd.h>
+#include <string.h>
 /**
  * _printf - Prints test file
  * @format: Format of output
@@ -9,43 +10,52 @@
  */
 int _printf(const char *format, ...)
 {
-int i = 0, count = 0;
-f_ptr print_func;
-char ben;
-va_list args;
+int char_to_print = 0;
+va_list arg_list;
 
-va_start(args, format);
-if (!format || (_leng_to_string((char *)format) == 0))
-{
+if (format == NULL)
 return (-1);
+
+va_start(arg_list, format);
+
+while (*format)
+{
+if (*format != '%')
+{
+write(1, format, 1);
+char_to_print++;
 }
-while (format[i] != '\0')
-{
-ben = format[i];
-if (ben == '%')
-{
-i++;
-ben = format[i];
-if (ben == '\0' && _leng_to_string((char *)format) == 1)
-return (-1);
-if (ben == '\0')
-return (count);
-if (ben)
-print_func = controller(ben);
-if (print_func != NULL)
-count += print_func(args);
-else if (ben == '%')
-count += _prints(ben);
 else
 {
-count += _prints('%');
-count += _prints(ben);
+format++;
+if (*format == '\0')
+break;
+if (*format == '%')
+{
+write(1, format, 1);
+char_to_print++;
+}
+else if (*format == 'c')
+{
+char c = va_arg(arg_list, int);
+write(1, &c, 1);
+char_to_print++;
+}
+else if (*format == 's')
+{
+char *str = va_arg(arg_list, char*);
+int str_len = 0;
+while (str[str_len] != '\0' && strncmp(&str[str_len], "10", 2) != 0)
+{            
+write(1, &str[str_len], 1);
+char_to_print++;
+str_len++;
 }
 }
-else
-count += _prints(ben);
-i++;
 }
-va_end(args);
-return (count);
+format++;
+}
+
+va_end(arg_list);
+return char_to_print;
 }

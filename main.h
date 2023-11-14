@@ -3,6 +3,7 @@
 #include <stdarg.h>
 #include <string.h>
 #include <unistd.h>
+#include <stdio.h>
 typedef int (*f_ptr)(va_list args);
 typedef struct Functions
 {

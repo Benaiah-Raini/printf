@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdarg.h>
 /**
  * print_bin - converts to binary
  * @val: argument

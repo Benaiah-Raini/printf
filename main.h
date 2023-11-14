@@ -21,4 +21,6 @@ int _char(va_list args);
 int _string(va_list args);
 int _signedint(va_list args);
 int _unsignedint(va_list args);
+int print_bin(va_list val);
+
 #endif

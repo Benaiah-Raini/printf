@@ -14,7 +14,8 @@ func functions[] = {
 {"c", _char},
 {"s", _string},
 {"d", _signedint},
-{"i", _unsignedint},
+{"i", _signedint},
+{"u", _unsignedint},
 {NULL, NULL}
 };
 

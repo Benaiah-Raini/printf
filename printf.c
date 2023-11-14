@@ -49,11 +49,3 @@ i++;
 va_end(args);
 return (count);
 }
-int main()
-{
-_printf("Ben\n");
-_printf("%c\n", 'b');
-_printf("%s\n", "Ben");
-_printf("%%\n");
-return 0;
-}

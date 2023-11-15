@@ -75,7 +75,7 @@ return (en);
 }
 
 /**
- *  _pristr a string s
+ *  _pristr - a string s
  *
  * @s: string to print
  * Return: the length of the string

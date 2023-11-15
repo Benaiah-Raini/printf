@@ -27,10 +27,7 @@ int _hexa_lower(va_list args);
 int _hexa_upper(va_list args);
 int _octal(va_list args);
 int print_other_string(va_list val);
-<<<<<<< HEAD
 int _rot13(va_list args);
-=======
 int print_HEX_extra(unsigned int num);
 
->>>>>>> f0ec561cf5b8a942419e31ace2f34b2f16e1a756
 #endif

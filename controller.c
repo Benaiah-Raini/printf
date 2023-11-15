@@ -17,6 +17,7 @@ func functions[] = {
 {"i", _signedint},
 {"u", _unsignedint},
 {"b", print_bin},
+{"x", _hexa_lower },
 {NULL, NULL}
 };
 

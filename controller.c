@@ -20,6 +20,7 @@ func functions[] = {
 {"x", _hexa_lower},
 {"X", _hexa_upper},
 {"o", _octal},
+{"S", print_other_string},
 {NULL, NULL}
 };
 

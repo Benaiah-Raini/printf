@@ -8,14 +8,14 @@
  */
 int _hexa_lower(va_list args)
 {
-	char *str;
+char *str;
 
-	unsigned int a = 0, add = 0;
+unsigned int a = 0, add = 0;
 
-	i = va_arg(args, unsigned int);
-	str = _converter(i, 16, 0);
-	_prints(str);
-	add = _leng_to_string(str);
+i = va_arg(args, unsigned int);
+str = converter(i, 16, 0);
+_prints(str);
+add = _leng_to_string(str);
 
-	return (add);
+return (add);
 }

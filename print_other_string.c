@@ -17,23 +17,23 @@ int print_other_string(va_list val)
 		s = "(null)";
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] < 32 || s[i] >= 127)
+		if (0 < s[i] < 32 || s[i] >= 127)
 		{
-			_putchar('\\');
-			_putchar('x');
+			_prints('\\');
+			_prints('x');
 			len = len + 2;
 			value = s[i];
 
 			if (value < 16)
 			{
-				_putchar('0');
+				_prints('0');
 				len++;
 			}
 			len = len + print_HEX_extra(value);
 		}
 		else
 		{
-			_putchar(s[i]);
+			_prints(s[i]);
 			len++;
 		}
 	}

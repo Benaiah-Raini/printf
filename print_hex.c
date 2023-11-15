@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdarg.h>
 /**
  *_hexa_lower - print an integer in hexadecimal lowercase
  *

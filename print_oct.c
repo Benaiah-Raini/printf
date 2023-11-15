@@ -9,14 +9,14 @@
  */
 int _octal(va_list args)
 {
-	char *str;
+char *str;
 
-	int add = 0;
+int add = 0;
 
-	unsigned int n = va_arg(args, unsigned int);
+unsigned int n = va_arg(args, unsigned int);
 
-	str = converter(n, 8, 0);
-	_prints(str);
-	add = _leng_to_string(str);
-	return (add);
+str = converter(n, 8, 0);
+_prints(str);
+add = _leng_to_string(str);
+return (add);
 }

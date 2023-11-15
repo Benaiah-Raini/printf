@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stdlib.h>
 #include <stdarg.h>
 #include <string.h>
 #include <unistd.h>
@@ -26,6 +27,7 @@ int _hexa_lower(va_list args);
 int _hexa_upper(va_list args);
 int _octal(va_list args);
 int print_other_string(va_list val);
+int _rot13(va_list args);
 int print_HEX_extra(unsigned int num);
 
 #endif

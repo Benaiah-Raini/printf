@@ -30,5 +30,6 @@ int print_other_string(va_list val);
 int _rot13(va_list args);
 int print_HEX_extra(unsigned int num);
 int print_reverse(va_list val);
+int print_convert_pointer(unsigned long int num);
 
 #endif

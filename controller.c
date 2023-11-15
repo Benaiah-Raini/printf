@@ -22,6 +22,7 @@ func functions[] = {
 {"o", _octal},
 {"S", print_other_string},
 {"R", _rot13},
+{"r", print_reverse},
 {NULL, NULL}
 };
 

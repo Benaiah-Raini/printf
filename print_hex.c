@@ -12,8 +12,8 @@ int _hexa_lower(va_list args)
 
 	unsigned int a = 0, add = 0;
 
-	i = va_arg(args, unsigned int);
-	str = _converter(i, 16, 0);
+	a = va_arg(args, unsigned int);
+	str = converter(a, 16, 0);
 	_prints(str);
 	add = _leng_to_string(str);
 

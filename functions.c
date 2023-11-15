@@ -38,6 +38,7 @@ frm = i % base;
 *--ptr = change[frm];
 i = i / base;
 }
+free(change);
 return (ptr);
 }
 

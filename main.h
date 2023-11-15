@@ -23,5 +23,7 @@ int _signedint(va_list args);
 int _unsignedint(va_list args);
 int print_bin(va_list val);
 int _hexa_lower(va_list args);
+int _hexa_upper(va_list args);
+int _octal(va_list args);
 
 #endif

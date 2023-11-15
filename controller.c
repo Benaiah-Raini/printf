@@ -18,6 +18,8 @@ func functions[] = {
 {"u", _unsignedint},
 {"b", print_bin},
 {"x", _hexa_lower },
+{"X", _hexa_upper},
+{"o", _octal},
 {NULL, NULL}
 };
 

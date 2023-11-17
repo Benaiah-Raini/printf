@@ -6,7 +6,7 @@
  */
 int print_37(va_list args)
 {
-	(void)args;
-	_prints('%');
-	return (1);
+(void)args;
+_prints('%');
+return (1);
 }

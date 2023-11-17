@@ -54,7 +54,6 @@ int _prints(char c)
 {
 return (write(1, &c, 1));
 }
-
 /**
  * _leng_to_string - reset number
  * Description: This function return a length for some string

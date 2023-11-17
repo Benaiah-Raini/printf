@@ -8,34 +8,34 @@
 
 int print_other_string(va_list val)
 {
-	char *s;
-	int i, len = 0;
-	int value;
+char *s;
+int i, len = 0;
+int value;
 
-	s = va_arg(val, char *);
-	if (s == NULL)
-		s = "(null)";
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (s[i] < 32 || s[i] >= 127)
-		{
-			_prints('\\');
-			_prints('x');
-			len = len + 2;
-			value = s[i];
+s = va_arg(val, char *);
+if (s == NULL)
+s = "(null)";
+for (i = 0; s[i] != '\0'; i++)
+{
+if (s[i] < 32 || s[i] >= 127)
+{
+_prints('\\');
+_prints('x');
+len = len + 2;
+value = s[i];
 
-			if (value < 16)
-			{
-				_prints('0');
-				len++;
-			}
-			len = len + print_HEX_extra(value);
-		}
-		else
-		{
-			_prints(s[i]);
-			len++;
-		}
-	}
-	return (len);
+if (value < 16)
+{
+_prints('0');
+len++;
+}
+len = len + print_HEX_extra(value);
+}
+else
+{
+_prints(s[i]);
+len++;
+}
+}
+return (len);
 }

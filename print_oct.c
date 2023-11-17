@@ -17,8 +17,8 @@ str = converter(n, 8, 0);
 
 if (str == NULL)
 {
-	_pristr("null");
-	return (-1);
+_pristr("null");
+return (-1);
 }
 for (i = 0; str[i] != '\0'; i++)
 {

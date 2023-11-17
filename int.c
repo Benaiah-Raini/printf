@@ -36,7 +36,7 @@ char *str;
 
 int n = va_arg(args, unsigned int), count = 0;
 
-	str = converter(n, 10, 0);
+str = converter(n, 10, 0);
 _pristr(str);
 count = _leng_to_string(str);
 return (count);

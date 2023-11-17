@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdarg.h>
-
 /**
  *_char - Prints a character
  *
@@ -11,6 +9,6 @@
 int _char(va_list args)
 {
 char c = va_arg(args, int);
-
-return (_prints(c));
+_prints(c);
+return (1);
 }

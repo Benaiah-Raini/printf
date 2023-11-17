@@ -10,16 +10,17 @@
 int _octal(va_list args)
 {
 char *str;
-int add = 0;
+int i, add = 0;
 
 unsigned int n = va_arg(args, unsigned int);
+str = converter(n, 8, 0);
+
 if (str == NULL)
 {
-	_prints("null");
+	_pristr("null");
 	return (-1);
 }
-str = converter(n, 8, 0);
-for (int i = 0; str[i] != '\0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
 _prints(str[i]);
 add++;

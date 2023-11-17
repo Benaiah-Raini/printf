@@ -18,13 +18,13 @@ func functions[] = {
 {"i", _signedint},
 {"u", _unsignedint},
 {"b", print_bin},
-{"x", _hexa_lower},
-{"X", _hexa_upper},
+{"x", print_hex},
+{"X", print_HEX},
 {"o", _octal},
 {"S", print_other_string},
 {"R", _rot13},
 {"r", print_reverse},
-{"p", print_convert_pointer},
+{"p", print_pointer},
 {NULL, NULL}
 };
 

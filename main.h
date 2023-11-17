@@ -13,7 +13,7 @@ typedef struct Functions
 } func;
 int _printf(const char *format, ...);
 char *converter(unsigned int i, int base, ...);
-int _prints(char c);
+int _prints(char *c);
 int _leng_to_string(char *s);
 void _pristr(char *s);
 char *_stcopy(char *desty, char *src);
@@ -29,5 +29,8 @@ int _octal(va_list args);
 int print_other_string(va_list val);
 int _rot13(va_list args);
 int print_HEX_extra(unsigned int num);
+int print_reverse(va_list val);
+int print_convert_pointer(unsigned long int num);
+int _strlen(char *str);
 
 #endif

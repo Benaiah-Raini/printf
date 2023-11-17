@@ -10,13 +10,20 @@
 int _octal(va_list args)
 {
 char *str;
-
 int add = 0;
 
 unsigned int n = va_arg(args, unsigned int);
-
+if (str == NULL)
+{
+	_prints("null");
+	return (-1);
+}
 str = converter(n, 8, 0);
-_prints(str);
-add = _leng_to_string(str);
+for (int i = 0; str[i] != '\0'; i++)
+{
+_prints(str[i]);
+add++;
+}
+free(str);
 return (add);
 }

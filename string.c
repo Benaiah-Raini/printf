@@ -7,11 +7,11 @@
 */
 int _strlen(char *str)
 {
-	int i;
+int i;
 
-	for (i = 0; str[i] != '\0'; i++)
-		;
-	return (i);
+for (i = 0; str[i] != '\0'; i++)
+;
+return (i);
 }
 
 /**
@@ -23,22 +23,22 @@ int _strlen(char *str)
  */
 int _string(va_list args)
 {
-	char *str = va_arg(args, char *);
-	int i, len;
+char *str = va_arg(args, char *);
+int i, len;
 
-	if (!str)
-	{
-		str = "(null)";
-		len = _strlen(str);
-		for (i = 0; i < len; i++)
-			_prints(str[i]);
-		return (len);
-	}
-	else
-	{
-		len = _strlen(str);
-		for (i = 0; i < len; i++)
-			_prints(str[i]);
-		return (len);
-	}
+if (!str)
+{
+str = "(null)";
+len = _strlen(str);
+for (i = 0; i < len; i++)
+_prints(str[i]);
+return (len);
+}
+else
+{
+len = _strlen(str);
+for (i = 0; i < len; i++)
+_prints(str[i]);
+return (len);
+}
 }

@@ -4,8 +4,9 @@
  *
  * Return: integer
  */
-int print_37(void)
+int print_37(va_list args)
 {
-	_putchar(37);
+	(void)args;
+	_prints('%');
 	return (1);
 }

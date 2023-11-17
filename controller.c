@@ -13,6 +13,7 @@ int (*controller(char s))(va_list)
 func functions[] = {
 {"c", _char},
 {"s", _string},
+{"%", print_37},
 {"d", _signedint},
 {"i", _signedint},
 {"u", _unsignedint},

@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * rot13_transform - Rotates the alphabet by 13 places (ROT13)
+ * _rot13_transform - Rotates the alphabet by 13 places (ROT13)
  *
  * @args: Strings
  * Return: An array of characters
@@ -20,7 +20,7 @@ s = strdup(original);
 if (s == NULL)
 {
 /* Handle memory allocation failure*/
-return 0;
+return (0);
 }
 
 for (a = 0; s[a] != '\0'; a++)
@@ -38,5 +38,5 @@ break;
 _pristr(s);
 count = _leng_to_string(s);
 free(s);
-return count;
+return (count);
 }

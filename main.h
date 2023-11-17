@@ -32,5 +32,6 @@ int print_HEX_extra(unsigned int num);
 int print_reverse(va_list val);
 int print_convert_pointer(unsigned long int num);
 int _strlen(char *str);
+int print_37(void);
 
 #endif

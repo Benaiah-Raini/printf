@@ -15,7 +15,7 @@ char ben;
 va_list args;
 
 va_start(args, format);
-if (!format || (_leng_to_string((char *)format) == 0))
+if (!format || (_strlen((char *)format) == 0))
 {
 return (-1);
 }
@@ -26,7 +26,7 @@ if (ben == '%')
 {
 i++;
 ben = format[i];
-if (ben == '\0' && _leng_to_string((char *)format) == 1)
+if (ben == '\0' && _strlen((char *)format) == 1)
 return (-1);
 if (ben == '\0')
 return (count);
